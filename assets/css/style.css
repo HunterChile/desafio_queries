@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+.container_principal{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 2fr 10fr 1fr ;
+    grid-template-areas: 
+        "nav"
+        "menu"
+        "main"
+        "footer"
+    ;
+    text-align: center;
+
+}
+
+nav{
+    grid-area: nav;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem ;
+
+
+}
+
+
+nav ul{
+    display: none;
+    list-style: none;
+}
+
+main{
+    grid-area: main;
+}
+main .autos{
+    overflow-y: scroll;
+    height: 70vh;
+    display: grid;
+    gap: 20px;
+}
+
+main .paginador{
+    display: flex;
+    justify-content: center;
+}
+
+aside{
+    grid-area: menu;
+    background-color: #E1E2E1;
+}
+
+
+footer{
+    grid-area: footer;
+    background-color: #002f6c;
+    color: white;
+}
+
+
+.icon {
+    height: 24px;
+    width: 24px;
+}
+
+@media all and (min-width:576px)  {
+    .container_principal{
+        grid-template-columns: 20% 85%;
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-areas: 
+        "nav menu"
+        "nav main"
+        "footer main"
+        ;
+    }    
+
+main .autos{ 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+nav{
+    flex-direction: column;
+    justify-content: start;
+    
+}
+
+nav .nav_icon{
+    display: none;
+}
+
+nav .nav_secciones{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    
+
+}
+
+main .autos{
+    height: 80vh;
+}
