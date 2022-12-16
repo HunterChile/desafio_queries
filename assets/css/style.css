@@ -32,7 +32,6 @@ nav{
     padding-top: 0.5rem;
     padding-bottom: 0.5rem ;
 
-
 }
 
 
@@ -76,7 +75,7 @@ footer{
 
 @media all and (min-width:576px)  {
     .container_principal{
-        grid-template-columns: 20% 85%;
+        grid-template-columns: 20% 80%;
         grid-template-rows: 1fr 10fr 1fr;
         grid-template-areas: 
         "nav menu"
