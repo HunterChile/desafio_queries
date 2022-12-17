@@ -34,6 +34,9 @@ nav{
 
 }
 
+.card{
+    box-shadow:  0.1em 0.1em 0.1em rgba(138, 138, 138, 0.2);
+}
 
 nav ul{
     display: none;
@@ -43,11 +46,13 @@ nav ul{
 main{
     grid-area: main;
 }
+
 main .autos{
     overflow-y: scroll;
     height: 70vh;
     display: grid;
     gap: 20px;
+
 }
 
 main .paginador{
